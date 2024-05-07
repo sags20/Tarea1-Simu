@@ -1,8 +1,8 @@
 #include <iostream>
-
+#include "lista_doble_circular/funciones_lista.hpp"
 using namespace std;
 
-#include <iostream>
+int tamaño;
 
 int main() {
    // agregar variables de datos
@@ -10,7 +10,7 @@ int main() {
 
     while (true) {
 
-        cout << "--------MENÚ--------"<< endl;
+        cout << "\n--------MENÚ--------"<< endl;
         cout << "1.Nueva lista"<< endl;
         cout << "2.Mostrar lista"<< endl;
         cout << "3.Ejecutar Algoritmo"<< endl;
@@ -22,12 +22,16 @@ int main() {
 
         switch (opc) {
             case 1:
-                //Crear una nueva lista
+                cout << "Ingrese el tamaño de la lista.\n";
+                cin >> tamaño; 
+                if(tamaño <= 0){
+                    cout << "El tamaño no puede ser menor o igual a cero, intente de nuevo.";
+                }
+                crearLista(tamaño);
                 break;
 
             case 2:
-                cout << "Lista: ";
-                //Mostrar la lista existente
+                mostrarLista();
                 break;
 
             case 3:
@@ -41,8 +45,8 @@ int main() {
                 break;
 
             case 5:
-                // Eliminar lista
-                cout << "Lista eliminada correctamente" << endl;
+                eliminarLista();
+                cout << "Lista eliminada correctamente." << endl;
                 break;
 
             case 0:
