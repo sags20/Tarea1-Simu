@@ -1,4 +1,4 @@
-void crearLista(int tamaño);
+void crearLista(int size);
 void mostrarLista();
 void eliminarLista();
 

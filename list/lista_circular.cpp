@@ -3,27 +3,27 @@
 using namespace std;
 
 
-void crearLista(int tamaño)
+void crearLista(int size)
 {
 
-    for (int i = 1; i <= tamaño; i++)
+    for (int i = 1; i <= size; i++)
     {
-        nodo *nuevoElemento = new nodo();
-        nuevoElemento->valor = i;
+        nodo *newElement = new nodo();
+        newElement->valor = i;
 
         if (cabeza == NULL)
         {
-            cabeza = nuevoElemento;
-            cola = nuevoElemento;
+            cabeza = newElement;
+            cola = newElement;
             cabeza->siguiente = cabeza;
             cabeza->anterior = cola;
         }
         else
         {
-            cola->siguiente = nuevoElemento;
-            nuevoElemento->anterior = cola;
-            nuevoElemento->siguiente = cabeza;
-            cola = nuevoElemento;
+            cola->siguiente = newElement;
+            newElement->anterior = cola;
+            newElement->siguiente = cabeza;
+            cola = newElement;
             cabeza->anterior = cola;
         }
     }

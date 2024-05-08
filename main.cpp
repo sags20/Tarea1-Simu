@@ -1,8 +1,8 @@
 #include <iostream>
-#include "lista_doble_circular/funciones_lista.hpp"
+#include "list/lista_circular.hpp"
 using namespace std;
 
-int tamaño;
+int size;
 
 int main() {
    // agregar variables de datos
@@ -23,11 +23,11 @@ int main() {
         switch (opc) {
             case 1:
                 cout << "Ingrese el tamaño de la lista.\n";
-                cin >> tamaño; 
-                if(tamaño <= 0){
+                cin >> size; 
+                if(size <= 0){
                     cout << "El tamaño no puede ser menor o igual a cero, intente de nuevo.";
                 }
-                crearLista(tamaño);
+                crearLista(size);
                 break;
 
             case 2:
