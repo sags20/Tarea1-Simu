@@ -1,6 +1,7 @@
 #include <iostream>
-#include "nodo.hpp"
+#include "lista_circular.hpp"
 using namespace std;
+
 
 void crearLista(int tamaño)
 {
