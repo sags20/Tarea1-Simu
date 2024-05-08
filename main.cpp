@@ -23,7 +23,7 @@ int main() {
         switch (opc) {
             case 1:
                 cout << "Ingrese el tamaño de la lista.\n";
-                cin >> size; 
+                cin >> size;
                 if(size <= 0){
                     cout << "El tamaño no puede ser menor o igual a cero, intente de nuevo.";
                 }

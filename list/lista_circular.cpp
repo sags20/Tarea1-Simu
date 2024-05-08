@@ -2,6 +2,8 @@
 #include "lista_circular.hpp"
 using namespace std;
 
+struct nodo *cabeza;
+struct nodo *cola;
 
 void crearLista(int size)
 {
