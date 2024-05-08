@@ -2,7 +2,7 @@
 #include "list/lista_circular.hpp"
 using namespace std;
 
-int size;
+int listSize;
 
 int main() {
    // agregar variables de datos
@@ -23,11 +23,11 @@ int main() {
         switch (opc) {
             case 1:
                 cout << "Ingrese el tamaño de la lista.\n";
-                cin >> size;
-                if(size <= 0){
+                cin >> listSize;
+                if(listSize <= 0){
                     cout << "El tamaño no puede ser menor o igual a cero, intente de nuevo.";
                 }
-                crearLista(size);
+                crearLista(listSize);
                 break;
 
             case 2:
